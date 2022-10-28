@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.demo.Adapter1Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:textSize="15dp"
+        android:textColor="@color/color1"
+        android:text="适配器（Adapter）\n AdapterView 包含（ListView,GrildView,Spinner,RecycleView）\n 配合adapter使用\n 例子可参考网格视图及各列表"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+</RelativeLayout>

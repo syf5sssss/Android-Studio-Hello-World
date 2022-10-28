@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_handler_send"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="HandlerSendMessage"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_handler_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:layout_gravity="center"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btn_thread_send"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="ThreadSendMessage"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_thread_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:layout_gravity="center"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

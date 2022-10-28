@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_get_permissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取通讯簿读写权限"/>
+
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取通讯簿信息"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加通讯簿联系人"/>
+
+    <Button
+        android:id="@+id/btn_create_test_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="创建test数据库"/>
+    <Button
+        android:id="@+id/btn_add_data_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="外部添加数据到test数据库"/>
+
+
+
+
+</LinearLayout>

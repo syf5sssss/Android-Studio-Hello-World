@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.org.helloworld">
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 这里设置权限还不够，安装APP时还需要特别为APP赋予电话权限一次，才能实现打电话功能 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="@string/app_name"
+        android:allowBackup="true"
+        android:icon="@mipmap/mieba"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/mieba"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="p">
+        <activity android:name="com.org.demo.slide.SlideActivity" />
+        <activity android:name="com.org.demo.navigation.ui.SignActivity" />
+        <activity android:name="com.org.demo.navigation.ui.BottomNavigation3Activity" />
+        <activity android:name="com.org.demo.navigation.ui.BottomNavigation2Activity" />
+        <activity android:name="com.org.demo.navigation.ui.BottomNavigation1Activity" />
+        <activity android:name="com.org.demo.CallPhoneActivity" />
+        <activity android:name="com.org.demo.Index3Activity" />
+        <activity android:name="com.org.demo.IndexDemoActivity" />
+        <activity android:name="com.org.demo.SqlLite1Activity" />
+        <activity android:name="com.org.h5.DemoH5Activity" />
+        <activity android:name="com.org.h5.JavaAndJSActivity" />
+        <activity android:name="com.org.h5.JsCallJavaCallPhoneActivity" />
+        <activity android:name="com.org.h5.JsCallJavaVideoActivity" />
+        <activity android:name="com.org.demo.SharedPreferences1Activity" />
+        <activity android:name="com.org.demo.http.OkhttpActivity" />
+        <activity android:name="com.org.demo.DrawableActivity" />
+        <activity android:name="com.org.demo.http.JsonAcitivity" />
+        <activity android:name="com.org.demo.handler.HandlerActivity" />
+        <activity android:name="com.org.demo.BroadCast2Activity" />
+        <activity android:name="com.org.demo.BroadCast1Activity" />
+        <activity android:name="com.org.demo.Fragment.FragActivity" />
+        <activity android:name="com.org.demo.provider.ContentProviderActivity" />
+        <activity android:name="com.org.demo.Thread1Activity" />
+        <activity android:name="com.org.demo.BackStackImg1Activity" />
+        <activity android:name="com.org.demo.BackStack1Activity" />
+        <activity android:name="com.org.demo.SecondActivity"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <intent-filter>
+                <action android:name="com.org.demo.SecondActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.org.demo.DailogShow1Activity"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <intent-filter>
+                <action android:name="com.org.demo.DailogShow1Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.org.demo.LifeCycle1Activity" />
+        <activity android:name="com.org.demo.Result1Activity" />
+        <activity android:name="com.org.demo.Communication1Activity" />
+        <activity android:name="com.org.demo.RunActivity1Activity" />
+        <activity android:name="com.org.demo.dispatch.DispatchActivity" />
+        <activity android:name="com.org.demo.Adapter1Activity" />
+        <activity android:name="com.org.demo.TextClock1Activity" />
+        <activity android:name="com.org.demo.MExpandableList1Activity" />
+        <activity android:name="com.org.demo.ChronoMeter1Activity" />
+        <activity android:name="com.org.demo.CheckBoxActivity" />
+        <activity android:name="com.org.demo.GridLayout1Activity" />
+        <activity android:name="com.org.demo.FrameLayout1Activity" />
+        <activity android:name="com.org.demo.RelativeLayout1Activity" />
+        <activity android:name="com.org.demo.LinearLayout1Activity" />
+        <activity
+            android:name="com.org.demo.BActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.org.demo.WebViewActivity" />
+        <activity android:name="com.org.demo.PopupWindowActivity" />
+        <activity android:name="com.org.demo.AlertDailogActivity" />
+        <activity android:name="com.org.demo.ToastActivity" />
+        <activity android:name="com.org.demo.SpinnerActivity" />
+        <activity android:name="com.org.demo.GridView3Activity" />
+        <activity android:name="com.org.demo.GridViewActivity" />
+        <activity android:name="com.org.demo.ListViewStyleActivity" />
+        <activity android:name="com.org.demo.ListViewActivity" />
+        <activity android:name="com.org.demo.DateTimeActivity" />
+        <activity android:name="com.org.demo.ScrollViewActivity" />
+        <activity android:name="com.org.demo.SeekBarActivity" />
+        <activity android:name="com.org.demo.ProgressbBarActivity" />
+        <activity android:name="com.org.demo.SwitchActivity" />
+        <activity android:name="com.org.demo.RadioActivity" />
+        <activity android:name="com.org.demo.ImageActivity" />
+        <activity android:name="com.org.demo.EditTextActivity" />
+        <activity android:name="com.org.demo.ButtonActivity" />
+        <activity android:name="com.org.demo.TextViewActivity" />
+        <activity android:name="com.org.demo.service.ServiceStart1Activity" />
+        <activity android:name="com.org.demo.service.ServiceBind2Activity" />
+        <activity
+            android:name="com.org.demo.IndexActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.org.demo.service.ServiceStart1" />
+        <service android:name="com.org.demo.service.ServiceBind2" />
+
+        <receiver android:name="com.org.demo.BroadCast.StaticBRReceiver">
+            <intent-filter>
+                <action android:name="com.org.demo.BroadCast.StaticBRReceiver" />
+            </intent-filter>
+        </receiver> <!-- 属性依次为：全限定类名,用于匹配的URI,是否共享数据 -->
+        <provider
+            android:name="com.org.demo.provider.NameContentProvider"
+            android:authorities="com.org.providers.MyProvider"
+            android:exported="true" />
+    </application>
+
+</manifest>

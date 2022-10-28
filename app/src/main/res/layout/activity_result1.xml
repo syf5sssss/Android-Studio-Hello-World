@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+<!--    <Button-->
+<!--        android:id="@+id/commbtn2"-->
+<!--        android:layout_marginTop="20sp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="跳转到ThirdActivity"-->
+<!--        android:textAllCaps="false" />-->
+
+    <TextView
+        android:id="@+id/restext1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/color3"
+        android:background="#FFFFFF"
+        android:text="\n\n\n\n\n"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

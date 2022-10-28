@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.org.demo.dispatch.MLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textSize="15dp"
+        android:textColor="@color/color1"
+        android:text="事件分发（Dispatch）\n 事件分发遵循向下传播的特点，Activity-Layout-View-Button\n 如果某个组件的方法返回True，表示该组件已经对事件进行了处理，不需要继续分发下去了，默认返回都是False\n 示例中包含Activity-Layout-Button \naction:0按下，1抬起，2移动\n"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <com.org.demo.dispatch.MButton
+        android:id="@+id/mbtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="按钮" />
+    <TextView
+        android:id="@+id/TextViewResult1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:textSize="15dp"
+        android:textColor="@color/color1"
+        android:text="\n\n\n"
+        android:textStyle="bold"
+        android:gravity="center" />
+</com.org.demo.dispatch.MLinearLayout>
